@@ -9,3 +9,10 @@ $ docker run -it \
   -v $PWD/sample.conf:/etc/apache2/conf.d/sample.conf \
   r-shiny-auth-poc:latest
 ```
+
+## Orchestrated deployment
+
+See the separate "infrastructure repository":https://github.com/joshpencheon/r-shiny-infrastructure-poc for an example of bootstrapping this very bare container with:
+
+* Proper websocket proxying for R Shiny
+* OIDC configuration with Auth0 as the Identity Provider
